@@ -1,0 +1,43 @@
+{
+  "version": "0.0.0-semantically-released",
+  "name": "updated",
+  "description": "check for updated package.json dependencies",
+  "author": "KhulnaSoft <ahmad@khulnasoft.com> (https://www.khulnasoft.com)",
+  "homepage": "https://github.com/khulnasoft/node-updated",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/khulnasoft/node-updated.git"
+  },
+  "bugs": {
+    "url": "https://github.com/khulnasoft/node-updated/issues"
+  },
+  "funding": {
+    "type": "individual",
+    "url": "https://github.com/sponsors/khulnasoft"
+  },
+  "type": "module",
+  "license": "MIT",
+  "keywords": [
+    "node",
+    "package",
+    "updates",
+    "check",
+    "dependencies",
+    "outdated"
+  ],
+  "engines": {
+    "node": ">=14"
+  },
+  "files": [
+    "lib",
+    "index.js"
+  ],
+  "bin": "index.js",
+  "scripts": {
+    "test": "node --test --test-reporter=spec test/*.js",
+    "test:ci": "npm run test"
+  },
+  "dependencies": {
+    "semver": "^7.3.7"
+  }
+}
